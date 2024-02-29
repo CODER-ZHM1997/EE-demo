@@ -1,6 +1,9 @@
+// 类型别名
+#include <stdio.h>
+typedef unsigned char BYTE;
 int main(int argc, char const *argv[])
 {
-    typedef unsigned char BYTE;
-BYTE c='a';
+    BYTE c = 'a';
+    printf("%c", c);
     return 0;
 }

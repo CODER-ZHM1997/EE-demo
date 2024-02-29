@@ -1,20 +1,8 @@
 #include <stdio.h>
+#define MAX 100
+#define SQUARE(a, b) #a + #b
 int main(int argc, char const *argv[])
 {
-    #define MAX 100
-    printf("MAX: %d\n",MAX);
-
-    #if MAX==100
-        printf("==\n");
-    #endif
-
-    #ifdef MAX
-        printf("MAX has defined\n");
-    #endif
-
-    #ifndef MAX
-        printf("MAX has not defined\n");
-    #endif
-    
-    return 0;
+    printf("%d\n", MAX);
+    printf("%s\n", SQUARE(1, 2));
 }
